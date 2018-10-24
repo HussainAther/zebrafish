@@ -1,0 +1,2 @@
+#!/bin/sh
+cufflinks -o 2016/R1/cufflinks/ -b Undetermined_S0_L001_R2_001.fasta -u --library-type fr-unstranded 2016/R2/Aligned.out.bam.sorted
