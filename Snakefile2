@@ -2,7 +2,16 @@ import os
 import pandas as pd
 import numpy as np
 
+# Rules -------
 
 rule all:
 	input:
 		"report.html"
+
+rule star:
+	input:
+	# use a list ofr multiple fastq files for one sample
+	# usually techincal replicates across lanes/flowcells
+	fq1 = ["reads/{sample}_R1_001.fastq", "reads/{sample}_R2_002.fastq"],
+	# paired end reads need to be ordered so each item in the two lists match
+	fq2 = ["reads/{sample}_R2_002.fastq", "reads/{sample}_R2_002.fastq"]
