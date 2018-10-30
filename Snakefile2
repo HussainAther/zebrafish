@@ -2,6 +2,9 @@ import os
 import pandas as pd
 import numpy as np
 
+TRACK = "Danio_rerio.GRCz11.94.gtf"
+
+
 # Rules -------
 
 rule all:
@@ -15,3 +18,6 @@ rule star:
 	fq1 = ["reads/{sample}_R1_001.fastq", "reads/{sample}_R2_002.fastq"],
 	# paired end reads need to be ordered so each item in the two lists match
 	fq2 = ["reads/{sample}_R2_002.fastq", "reads/{sample}_R2_002.fastq"]
+
+rule cufflinks:
+	input 
