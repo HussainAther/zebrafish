@@ -10,6 +10,8 @@ TRACK = "Danio_rerio.GRCz11.94.gtf"
 rule all:
 	input:
 		"report.html"
+#		"diffexp/isoform_exp.diff",
+#		"assembly/comparison"
 
 rule star:
 	input:
@@ -19,5 +21,16 @@ rule star:
 	# paired end reads need to be ordered so each item in the two lists match
 	fq2 = ["reads/{sample}_R2_002.fastq", "reads/{sample}_R2_002.fastq"]
 
-rule cufflinks:
-	input 
+#rule cufflinks:
+#	input:
+
+rule assembly:
+	input:
+		"mapped/{sample}.bam"
+	output:
+		"assembly/{sample}/transcripts.gtf",
+		dir="assembly/{sample}"
+	threads: 4
+	shell:
+		"cufflinks --num-threads {threads} -o {output.dir} "
+		"--frag-bias-correct {REF} {input}"
