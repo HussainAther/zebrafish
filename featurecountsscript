@@ -1,0 +1,11 @@
+#!/bin/sh
+featureCounts -T 5 -t exon -g gene_id -a Danio_rerio.GRCz11.94.abinitio.gtf -o featurecounts/featurecounts.2016.R1.txt 2016/R1/Aligned.out.bam.sorted 
+featureCounts -T 5 -t exon -g gene_id -a Danio_rerio.GRCz11.94.abinitio.gtf -o featurecounts/featurecounts.2016.R2.txt
+
+
+featureCounts -T 5 -t exon -g gene_id -a Danio_rerio.GRCz11.94.abinitio.gtf -o featurecounts/featurecounts.2016.R1.txt 2016/R1/Aligned.out.bam.sorted 
+featureCounts -T 5 -t exon -g gene_id -a Danio_rerio.GRCz11.94.abinitio.gtf -o featurecounts/featurecounts.2016.R2.txt
+
+
+
+2016/R2/Aligned.out.bam.sorted 2018/exp1/R1/Aligned.out.bam.sorted 2018/exp1/I1/Aligned.out.bam.sorted 2018/exp1/R2/Aligned.out.bam.sorted 2018/exp2/R1/Aligned.out.bam.sorted
