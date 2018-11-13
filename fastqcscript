@@ -1,0 +1,4 @@
+#!/bin/sh
+fastqc /data/BurgessLab/sequencing/2016_6dpf_brain_mRNAseq/raw-read-data/Undetermined_S0_L001_R1_001.fastq.gz > fastqc/2016/L001_R1
+fastqc /data/BurgessLab/sequencing/2016_6dpf_brain_mRNAseq/raw-read-data/Undetermined_S0_L002_R1_001.fastq.gz > fastqc/2016/L002_R1
+fastqc /data/BurgessLab/sequencing/2016_6dpf_brain_mRNAseq/raw-read-data/Undetermined_S0_L001_R2_001.fastq.gz > fastqc/2016/L001_R1
