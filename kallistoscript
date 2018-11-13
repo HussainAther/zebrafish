@@ -1,3 +1,17 @@
 #!/bin/sh
 # kallisto index -i transcripts.idx GCA_000002035.4_GRCz11_genomic.fna.gz 
-kallisto quant -i transcripts.idx -o output -b 100 Undetermined_S0_L001_R1_001.fastq Undetermined_S0_L001_R2_001.fastq
+kallisto quant -i transcripts.idx -o kallisto/2016.L001/ -b 100 Undetermined_S0_L001_R1_001.fastq Undetermined_S0_L001_R2_001.fastq
+kallisto quant -i transcripts.idx -o kallisto/2016.L002/ -b 100 Undetermined_S0_L002_R1_001.fastq Undetermined_S0_L002_R2_001.fastq
+
+kallisto quant -i transcripts.idx -o kallisto/2018.exp1.R1/ -b 100 /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp1-3K/3K_S1_L001_R1_001.fastq.gz /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp1-3K/3K_S1_L002_R1_001.fastq.gz
+kallisto quant -i transcripts.idx -o kallisto/2018.exp1.R2/ -b 100 /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp1-3K/3K_S1_L001_R2_001.fastq.gz /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp1-3K/3K_S1_L002_R2_001.fastq.gz
+
+kallisto quant -i transcripts.idx -o kallisto/2018.exp1.I1/ -b 100 /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp1-3K/3K_S1_L001_I1_001.fastq.gz /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp1-3K/3K_S1_L002_I1_001.fastq.gz
+
+kallisto quant -i transcripts.idx -o kallisto/2018.exp2.R1/ -b 100 /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp2-3K/3K_S1_L001_R1_001.fastq.gz /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp2-3K/3K_S1_L002_R1_001.fastq.gz
+kallisto quant -i transcripts.idx -o kallisto/2018.exp2.R2/ -b 100 /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp2-3K/3K_S1_L001_R2_001.fastq.gz /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp2-3K/3K_S1_L002_R2_001.fastq.gz
+kallisto quant -i transcripts.idx -o kallisto/2018.exp2.I1/ -b 100 /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp2-3K/3K_S1_L001_I1_001.fastq.gz /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp2-3K/3K_S1_L002_I1_001.fastq.gz
+
+kallisto quant -i transcripts.idx -o kallisto/2018.exp3.R1/ -b 100 /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp3-3K/3K_S1_L001_R1_001.fastq.gz /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp3-3K/3K_S1_L002_R1_001.fastq.gz
+kallisto quant -i transcripts.idx -o kallisto/2018.exp3.R2/ -b 100 /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp3-3K/3K_S1_L001_R2_001.fastq.gz /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp3-3K/3K_S1_L002_R2_001.fastq.gz
+kallisto quant -i transcripts.idx -o kallisto/2018.exp3.I1/ -b 100 /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp3-3K/3K_S1_L001_I1_001.fastq.gz /data/BurgessLab/sequencing/2018_00_scRNAseq-Graham/2_fastqs/exp3-3K/3K_S1_L002_I1_001.fastq.gz
