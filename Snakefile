@@ -31,3 +31,6 @@ rule kallisto_quant:
         "--genomebam --gtf {GTF} "
         "--chromosomes chrom.txt "
         "{input[0]} {input[1]}"
+
+#rule cufflinks:
+#	input 
