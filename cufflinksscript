@@ -1,2 +1,13 @@
 #!/bin/sh
-cufflinks -o 2016/R1/cufflinks/ -b Undetermined_S0_L001_R2_001.fasta -u --library-type fr-unstranded 2016/R2/Aligned.out.bam.sorted
+#cufflinks -o 2016/R2/cufflinks_L002/ -b Undetermined_S0_L002_R2_001.fasta -u --library-type fr-unstranded 2016/R2/Aligned.out.bam.sorted
+#cufflinks -o 2018/exp1/R1/cufflinks/ -b 2018/exp1/3K_S1_L001_R1_001.fasta -u --library-type fr-unstranded 2018/exp1/R1/Aligned.out.bam.sorted
+cufflinks -o 2018/exp2/R1/cufflinks/ -b 2018/exp2/10_S2_L001_R1_001.fasta -u --library-type fr-unstranded 2018/exp2/R1/Aligned.out.bam.sorted
+cufflinks -o 2018/exp3/R1/cufflinks/ -b 2018/exp3/Burgess_S2_L001_R1_001.fasta -u --library-type fr-unstranded 2018/exp3/R1/Aligned.out.bam.sorted
+
+cufflinks -o 2018/exp1/R2/cufflinks/ -b 2018/exp1/3K_S1_L001_R1_001.fasta -u --library-type fr-unstranded 2018/exp1/R2/Aligned.out.bam.sorted
+cufflinks -o 2018/exp2/R2/cufflinks/ -b 2018/exp2/10_S2_L001_R1_001.fasta -u --library-type fr-unstranded 2018/exp2/R2/Aligned.out.bam.sorted
+cufflinks -o 2018/exp3/R2/cufflinks/ -b 2018/exp3/Burgess_S2_L001_R1_001.fasta -u --library-type fr-unstranded 2018/exp3/R2/Aligned.out.bam.sorted
+
+cufflinks -o 2018/exp1/I1/cufflinks/ -b 2018/exp1/3K_S1_L001_R1_001.fasta -u --library-type fr-unstranded 2018/exp1/I1/Aligned.out.bam.sorted
+cufflinks -o 2018/exp2/I1/cufflinks/ -b 2018/exp2/10_S2_L001_R1_001.fasta -u --library-type fr-unstranded 2018/exp2/I1/Aligned.out.bam.sorted
+cufflinks -o 2018/exp3/I1/cufflinks/ -b 2018/exp3/Burgess_S2_L001_R1_001.fasta -u --library-type fr-unstranded 2018/exp3/I1/Aligned.out.bam.sorted
