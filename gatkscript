@@ -1,0 +1,2 @@
+#!/bin/sh
+gatk Pileup -R Danio_rerio.GRCz10.cdna.all.f -I 2016/R1/Aligned.out.sorted.bam -O gatkout2016R1
