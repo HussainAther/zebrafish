@@ -1,2 +1,2 @@
 #!/bin/sh
-CreateSequenceDictionary -REFERENCE Danio_rerio.GRCz10.cdna.all.fa -OUTPUT Danio_rerio.GRCz10.cdna.all.fa.dict
+CreateSequenceDictionary -REFERENCE Danio_rerio.GRCz10.cdna.all.fa -OUTPUT Danio_rerio.GRCz10.cdna.all.dict
