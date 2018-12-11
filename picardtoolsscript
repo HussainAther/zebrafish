@@ -1,0 +1,2 @@
+#!/bin/sh
+java -jar picard.jar CreateSequenceDictionary REFERENCE=Danio_rerio.GRCz10.cdna.all.fa OUTPUT=Danio_rerio.GRCz10.cdna.all.fa.dict
