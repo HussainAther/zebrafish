@@ -1,0 +1,6 @@
+#!/bin/sh
+java -jar GenomeAnalysisTK.jar \
+	-T VariantsToVCF \
+	-R Danio_rerio.GRCz10.cdna.all.fa \
+	-o Danio_rerio.GRCz10.vcf \
+	--variant:RawHapMAp input.hapmap
