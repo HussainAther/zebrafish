@@ -1,8 +1,14 @@
 #!/bin/sh
 
 java -jar gatk-4.0.11.0/gatk-package-4.0.11.0-local.jar \
-	-R Danio_rerio.GRCz10.cdna.all.fa \
-	-T HaplotypeCaller \
-	-I 2016/R1/Aligned.out.sorted.bam \
-	-stand_call_conf 20 \
-	-o 2016.R1.raw.snps.indels.vcf
+	HaplotypeCaller \
+	--reference Danio_rerio.GRCz10.cdna.all.fa \
+	--input 2016/R1/Aligned.out.sorted.picard.bam \
+	--output 2016.R1.raw.snps.indels.vcf
+
+
+java -jar gatk-4.0.11.0/gatk-package-4.0.11.0-local.jar \
+	HaplotypeCaller \
+	--reference Danio_rerio.GRCz10.cdna.all.fa \
+	--input 2016/R2/Aligned.out.sorted.picard.bam \
+	--output 2016.R2.raw.snps.indels.vcf
