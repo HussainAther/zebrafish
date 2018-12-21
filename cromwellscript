@@ -1,0 +1,2 @@
+#!/bin/sh
+java -jar cromwell-36.jar run gatk3-4-rnaseq-germline-snps-indels/rna-germline-variant-calling.wdl --inputs gatk3-4-rnaseq-germline-snps-indels/rna-germline-variant-calling.inputs.json
