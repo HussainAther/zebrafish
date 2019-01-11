@@ -1,2 +1,3 @@
 #!/bin/sh
-java -jar picard.jar AddOrReplaceReadGroups I=2016/R1/Aligned.out.sorted.bam O=2016/R1/Aligned.out.sorted.picard.bam RGLB=lib1 RGPL=illumina RGPU=unit1 RGSM=2016_R1
+java -jar picard.jar AddOrReplaceReadGroups I=2016/L001/Aligned.out.sorted.bam O=2016/L001/Aligned.out.sorted.picard.bam RGLB=L001 RGPL=illumina RGPU=HLCCKBCXX.1 RGSM=Undetermined
+java -jar picard.jar AddOrReplaceReadGroups I=2016/L002/Aligned.out.sorted.bam O=2016/L002/Aligned.out.sorted.picard.bam RGLB=L002 RGPL=illumina RGPU=HLCCKBCXX.1 RGSM=Undetermined

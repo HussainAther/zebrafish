@@ -1,3 +1,3 @@
 #!/bin/sh
 # samtools mpileup -uf Danio_rerio.GRCz10.cdna.all.fa 2016/R1/Aligned.out.bam.sorted 2016/R2/Aligned.out.bam.sorted | bcftools call -cg - | perl vcfutils.pl vcf2fq > cns.fq
-bcftools mpileup -f Danio_rerio.GRCz10.cdna.all.fa 2016/R1/Aligned.out.bam.sorted 2016/R2/Aligned.out.bam.sorted | bcftools call -c > sorted.bcf
+bcftools mpileup --output-type v -f Danio_rerio.GRCz10.cdna.all.fa 2016/R1/Aligned.out.bam.sorted 2016/R2/Aligned.out.bam.sorted | bcftools call -mv -Ob -o sorted.bcf
