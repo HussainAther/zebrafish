@@ -10,4 +10,6 @@ cd /data/$USER/test_data/GATK
 
 java -Xmx8g -Djava.io.tmpdir=/lscratch/$SLURM_JOBID -jar $GATK_JAR \
   -T CountReads \
-  -R 
+  -R Danio_rerio.GRCz10.cdna.all.fa \
+  -I 2016/L001/Aligned.out.sorted.bam
+  -et NO_ET -K $GATK_KEY
