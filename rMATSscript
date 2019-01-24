@@ -1,0 +1,2 @@
+#!/bin/sh
+python2.7 rmats.py --b1 bam1.txt --b2 bam2.txt -t single --readLength 101 --gtf /data/athersh/Danio_rerio.GRCz11.94.gtf --od rmats_out
