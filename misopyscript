@@ -1,2 +1,2 @@
 #!/bin/sh
-index_gff --index 
+index_gff --index Danio_rerio.GRCz11.94.gff3 Danio_rerio.GRCz11.94.index
