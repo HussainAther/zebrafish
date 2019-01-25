@@ -1,2 +1,7 @@
 #!/bin/sh
-index_gff --index Danio_rerio.GRCz11.94.gff3 Danio_rerio.GRCz11.94.index
+# index_gff --index Danio_rerio.GRCz11.94.gff3 Danio_rerio.GRCz11.94.index
+
+for i in {36..101}
+do
+  miso --run Danio_rerio.GRCz11.94.index splice/2019_1Aligned.out.sorted.bam --output-dir miso_output_2019_1 --read-len $i
+done
