@@ -1,0 +1,2 @@
+#!/bin/sh
+sashimi_plot ./ settings.txt --output-dir sashimi_plot
