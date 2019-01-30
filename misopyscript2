@@ -1,0 +1,2 @@
+#!/bin/sh
+summarize_miso --summarize-samples miso_output_2019_1 miso_output_2019_1_summary
