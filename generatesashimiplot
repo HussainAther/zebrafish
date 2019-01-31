@@ -1,3 +1,6 @@
 #!/bin/sh
-sashimi_plot --plot-title "EPB41L5" --plot-event "gene:ENSDARG00000032324" Danio_rerio.GRCz11.95.index settings.txt --output-dir sashimi_EPB41L5
-#sashimi_plot --plot-title "EPB41L5" --plot-bf-dist "gene:ENSDARG00000032324" Danio_rerio.GRCz11.95.index settings.txt --output-dir sashimi_bf_EPB41L5
+#sashimi_plot --plot-title "EPB41L5" --plot-event "gene:ENSDARG00000032324" Danio_rerio.GRCz11.94.index settings.txt --output-dir sashimi_EPB41L5_94
+sashimi_plot --plot-title "EPB41L5" --plot-event "gene:ENSDARG00000032324" Danio_rerio.GRCz11.95.index settings.txt --output-dir sashimi_EPB41L5_95
+#sashimi_plot --plot-title "EPB41L5" --plot-event "chr9:28880026:28889689:-" Danio_rerio.GRCz11.95.index settings.txt --output-dir sashimi_EPB41L5_95_coord
+#sashimi_plot --plot-title "1 Bayes factor comparison" --plot-bf-dist miso_output_2019_1control/miso_output_2019_1_vs_miso settings.txt --output-dir sashimi_bf_1
+#sashimi_plot --plot-title "7 Bayes factor comparison" --plot-bf-dist  miso_output_2019_7control/miso_output_2019_7_vs_miso settings.txt --output-dir sashimi_bf_7
