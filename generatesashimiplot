@@ -1,2 +1,3 @@
 #!/bin/sh
-sashimi_plot ./ settings.txt --output-dir sashimi_plot
+sashimi_plot --plot-title "EPB41L5" --plot-event "gene:ENSDARG00000032324" Danio_rerio.GRCz11.95.index settings.txt --output-dir sashimi_EPB41L5
+#sashimi_plot --plot-title "EPB41L5" --plot-bf-dist "gene:ENSDARG00000032324" Danio_rerio.GRCz11.95.index settings.txt --output-dir sashimi_bf_EPB41L5
