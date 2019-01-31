@@ -1,12 +1,12 @@
 import pandas as pd
 
-df = pd.DataFrame.from_csv("summary_miso_output_2019_1/summary/miso_output_2019_1.miso_summary", sep="\t", index_col=False)
+df = pd.DataFrame.from_csv("summary_miso_output_2019_1/summary/miso_output_2019_1.miso_summary", sep="\t", index_col=None)
 
 chr = list(df["chrom"])
 start = list(df["mRNA_starts"])
 end = list(df["mRNA_ends"])
 name = list(df["event_name"])
-score = list(len(df["chrom"])*"\t")
+score = list(len(list(df["chrom"]))*"\t")
 strand = list(df["strand"])
 
 all = [chr, start, end, name, score, strand]
