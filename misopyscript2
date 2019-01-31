@@ -1,5 +1,8 @@
 #!/bin/sh
-summarize_miso --summarize-samples miso_output_2019_1 miso_output_2019_1_summary
-summarize_miso --summarize-samples miso_output_2019_7 miso_output_2019_7_summary
-summarize_miso --summarize-samples miso_output_2019_1control miso_output_2019_1control_summary
-summarize_miso --summarize-samples miso_output_2019_7control miso_output_2019_7control_summary
+#summarize_miso --summarize-samples miso_output_2019_1 miso_output_2019_1_summary
+#summarize_miso --summarize-samples miso_output_2019_7 miso_output_2019_7_summary
+#summarize_miso --summarize-samples miso_output_2019_1control miso_output_2019_1control_summary
+#summarize_miso --summarize-samples miso_output_2019_7control miso_output_2019_7control_summary
+
+compare_miso --compare-samples miso_output_2019_1 miso miso_output_2019_1control miso_output_2019_1comparison
+compare_miso --compare-samples miso_output_2019_7 miso miso_output_2019_7control miso_output_2019_7comparison
