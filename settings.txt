@@ -1,20 +1,12 @@
 [data]
 # directory where BAM files are
-bam_prefix = ./splice
+bam_prefix = /data/athersh/splice
 # directory where MISO output is
-miso_prefix = ./
+miso_prefix = /data/athersh
 
-bam_files = [
-    "2019_1controlAligned.out.sorted.bam",
-    "2019_1Aligned.out.sorted.bam",    
-    "2019_7controlAligned.out.sorted.bam",
-    "2019_7Aligned.out.sorted.bam"]
+bam_files = ["2019_1controlAligned.out.sorted.bam", "2019_1Aligned.out.sorted.bam", "2019_7controlAligned.out.sorted.bam", "2019_7Aligned.out.sorted.bam"]
 
-miso_files = [
-    "miso_output_2019_1control"
-    "miso_output_2019_1",
-    "miso_output_2019_7control",
-    "miso_output_2019_7"]
+miso_files = ["miso_output_2019_1control", "miso_output_2019_1", "miso_output_2019_7control", "miso_output_2019_7"]
 
 [plotting]
 # Dimensions of figure to be plotted (in inches)
@@ -22,13 +14,13 @@ fig_width = 7
 fig_height = 5
 # Factor to scale down introns and exons by
 intron_scale = 30
-exon_scale = 4
+exon_scale = 6
 # Whether to use a log scale or not when plotting
 logged = False
 font_size = 6
 
 # Max y-axis
-ymax = 150
+ymax = 15
 
 # Whether to plot posterior distributions inferred by MISO
 show_posteriors = True
@@ -46,8 +38,8 @@ gene_posterior_ratio = 5
 # List of colors for read denisites of each sample
 colors = [
     "#CC0011",
-    "#CC0011",
     "#FF8800",
+    "#CC0011",
     "#FF8800"]
 
 # Number of mapped reads in each sample
