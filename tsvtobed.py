@@ -11,7 +11,7 @@ strand = list(df["strand"])
 
 all = [("chr", chr), ("start", start), ("end", end), ("name", name), ("score", score), ("strand", strand)]
 
-beddf = pd.DataFrame.from_items(all, index).set_index("event_name")
+beddf = pd.DataFrame.from_items(all).set_index("chr")
 
 with open("miso_output_1.bed", "w") as file:
     file.write(pd.DataFrame.to_csv(beddf, sep="\t"))
