@@ -1,7 +1,7 @@
 import pandas as pd
 
 def create_bed(input, output):
-    df = pd.DataFrame.from_csv("summary_miso_output_2019_1/summary/miso_output_2019_1.miso_summary", sep="\t", index_col=None)
+    df = pd.DataFrame.from_csv(input, sep="\t", index_col=None)
 
     chr = list(df["chrom"])
     start = list(df["mRNA_starts"])
