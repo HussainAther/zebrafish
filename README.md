@@ -1,2 +1,3 @@
-# zebrafish
-Zebrafish work in the lab of Harold Burgess at NICHD of NIH
+# Zebrafish project
+
+This is a misc. repository for much of my work in the Burgess Lab with the zebrafish genome.
