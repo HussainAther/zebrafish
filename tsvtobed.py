@@ -1,13 +1,13 @@
 import pandas as pd
 
 def create_bed(input, output):
-    df = pd.DataFrame.from_csv(input, sep="\t", index_col=None)
+    df = pd.DataFrame.from_csv(input, sep="\t", index_col=None) 
 
     chr = list(df["chrom"])
     start = list(df["mRNA_starts"])
     end = list(df["mRNA_ends"])
     name = list(df["event_name"])
-    score = list(len(list(df["chrom"]))*"0")
+    score = list(df["miso_posterior_mean"])
     strand = list(df["strand"])
 
     all = [("chr", chr), ("start", start), ("end", end), ("name", name), ("score", score), ("strand", strand)]
