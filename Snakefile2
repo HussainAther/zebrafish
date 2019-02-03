@@ -34,3 +34,11 @@ rule assembly:
 	shell:
 		"cufflinks --num-threads {threads} -o {output.dir} "
 		"--frag-bias-correct {REF} {input}"
+
+rule samtools_index:
+	input:
+		"sorted_reads/{sample}.bam"
+	output:
+		"sorted_reads/{sample}.bam.bai"
+	shell:
+		"samtools index {input}"
